@@ -1,0 +1,22 @@
+@import '../../../theme.scss';
+
+.container {
+  height: 100%;
+  padding-top: 60px;
+}
+
+mat-form-field,
+.google-signup,
+.submit-btn {
+  width: 300px;
+}
+
+.google-signup {
+  font-size: 16px;
+}
+
+.submit-btn {
+  margin-top: 10px;
+  height: 40px;
+  font-size: 18px;
+}

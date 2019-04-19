@@ -1,0 +1,53 @@
+<section class="container" fxLayout fxLayoutAlign="center flex-start">
+  <div
+    class="form-container"
+    fxFlex="300px"
+    fxFlex.xs="100%"
+    fxLayout="column"
+    fxLayoutAlign="center center"
+    fxLayoutGap="20px"
+  >
+    <h1>Log In</h1>
+    <button mat-raised-button class="google-signup">
+      <div fxLayout fxLayoutAlign="center" fxLayoutGap="10px">
+        <div>
+          <fa-icon [icon]="['fab', 'google']" class="google-icon"></fa-icon>
+        </div>
+        <mat-divider vertical></mat-divider>
+        <div fxFlex>
+          Log in with Google
+        </div>
+      </div>
+    </button>
+    <form
+      fxLayout="column"
+      fxLayoutAlign="center center"
+      fxLayoutGap="10px"
+      [formGroup]="loginForm"
+      (ngSubmit)="onSubmit()"
+    >
+      <mat-form-field>
+        <mat-label>Email Address</mat-label>
+        <input matInput formControlName="email" />
+        <mat-error *ngIf="hasError('email', 'required')">
+          Can't be empty!
+        </mat-error>
+        <mat-error *ngIf="hasError('email', 'email')">
+          Invalid email address
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input matInput formControlName="password" type="password" />
+        <mat-error *ngIf="hasError('password', 'required')">
+          Can't be empty!
+        </mat-error>
+      </mat-form-field>
+
+      <button mat-raised-button color="accent" type="submit" class="submit-btn">
+        Submit
+      </button>
+    </form>
+  </div>
+</section>
