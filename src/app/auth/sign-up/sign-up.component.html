@@ -1,0 +1,56 @@
+<section class="container" fxLayout fxLayoutAlign="center center">
+  <div
+    class="form-container"
+    fxFlex="400px"
+    fxFlex.xs="100%"
+    fxLayout="column"
+    fxLayoutAlign="center center"
+    fxLayoutGap="20px"
+  >
+    <h1>Sign Up</h1>
+    <button mat-stroked-button>Continue with Google</button>
+    <form
+      fxLayout="column"
+      fxLayoutAlign="center center"
+      fxLayoutGap="10px"
+      [formGroup]="signupForm"
+      (ngSubmit)="onSubmit()"
+    >
+      <mat-form-field>
+        <mat-label>Email Address</mat-label>
+        <input matInput formControlName="email" />
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input matInput formControlName="password" />
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Confirm Password</mat-label>
+        <input matInput formControlName="confirmPassword" />
+      </mat-form-field>
+
+      <mat-form-field>
+        <input
+          matInput
+          [matDatepicker]="picker"
+          placeholder="Choose a date of birth"
+          formControlName="dateOfBirth"
+          id="dateOfBirth"
+          [max]="maxDate"
+          readonly
+          (click)="picker.open()"
+        />
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker touchUi></mat-datepicker>
+      </mat-form-field>
+
+      <mat-checkbox formControlName="agreeToTerms" color="primary">
+        Agree to Terms and Conditions
+      </mat-checkbox>
+
+      <button mat-raised-button color="primary" type="submit">Submit</button>
+    </form>
+  </div>
+</section>

@@ -1,0 +1,150 @@
+$md-primary: (
+  50: #e8eae8,
+  100: #c5cbc5,
+  200: #9fa89e,
+  300: #788577,
+  400: #5b6a59,
+  500: #3e503c,
+  600: #384936,
+  700: #30402e,
+  800: #283727,
+  900: #1b271a,
+  A100: #7bff6e,
+  A200: #4cff3b,
+  A400: #1eff08,
+  A700: #16ed00,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #ffffff,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000
+  )
+);
+
+@import '../node_modules/@angular/material/_theming.scss';
+// @import '~@angular/material/theming';
+
+@include mat-core();
+
+$md-primary: (
+  50: #ebe5e8,
+  100: #cdbfc6,
+  200: #ac94a0,
+  300: #8a697a,
+  400: #71485e,
+  500: #582841,
+  600: #50243b,
+  700: #471e32,
+  800: #3d182a,
+  900: #2d0f1c,
+  A100: #ff6ba9,
+  A200: #ff388b,
+  A400: #ff056d,
+  A700: #eb0062,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #ffffff,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #ffffff,
+    A400: #ffffff,
+    A700: #ffffff
+  )
+);
+
+$md-accent: (
+  50: #fef3ea,
+  100: #fde2c9,
+  200: #fccfa6,
+  300: #fbbb82,
+  400: #faad67,
+  500: #f99e4c,
+  600: #f89645,
+  700: #f78c3c,
+  800: #f68233,
+  900: #f57024,
+  A100: #ffffff,
+  A200: #fffcfb,
+  A400: #ffdac8,
+  A700: #ffcaae,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #ffffff,
+    600: #000000,
+    700: #000000,
+    800: #000000,
+    900: #000000,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000
+  )
+);
+
+$md-warn: (
+  50: #f9e5e9,
+  100: #f0bfc8,
+  200: #e695a4,
+  300: #db6a80,
+  400: #d44a64,
+  500: #cc2a49,
+  600: #c72542,
+  700: #c01f39,
+  800: #b91931,
+  900: #ad0f21,
+  A100: #ffdcdf,
+  A200: #ffa9b1,
+  A400: #ff7682,
+  A700: #ff5d6b,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000
+  )
+);
+
+$primary: mat-palette($md-primary);
+$accent: mat-palette($md-accent);
+$warn: mat-palette($md-warn);
+$orange: #f36f38;
+$pink: #ef4648;
+$white: #fff;
+$purple: #582841;
+$yellow: #f99e4c;
+$red: #cc2a49;
+
+$oe-theme: mat-light-theme($primary, $accent, $warn);
+
+@include angular-material-theme($oe-theme);
