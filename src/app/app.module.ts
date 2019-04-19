@@ -11,9 +11,10 @@ import { SignupComponent } from './auth/signup/signup.component';
 import { HomePageComponent } from './home/home-page/home-page.component';
 import { HomeComponent } from './home/home.component';
 import { LandingPageComponent } from './home/landing-page/landing-page.component';
-import { MaterialModule } from './material/material.module';
-import { FaModule } from './font-awesome/fa.module';
+import { MaterialModule } from './design/material.module';
+import { FaModule } from './design/fa.module';
 import { HeaderComponent } from './navigation/header/header.component';
+import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { HeaderComponent } from './navigation/header/header.component';
     HomePageComponent,
     LoginComponent,
     SignupComponent,
-    HeaderComponent
+    HeaderComponent,
+    SidenavListComponent
   ],
   imports: [
     BrowserModule,

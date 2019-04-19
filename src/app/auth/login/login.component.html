@@ -7,7 +7,7 @@
     fxLayoutAlign="center center"
     fxLayoutGap="20px"
   >
-    <h1>Log In</h1>
+    <h1 class="form-title">Log In</h1>
     <button mat-raised-button class="google-signup">
       <div fxLayout fxLayoutAlign="center" fxLayoutGap="10px">
         <div>
@@ -45,8 +45,14 @@
         </mat-error>
       </mat-form-field>
 
-      <button mat-raised-button color="accent" type="submit" class="submit-btn">
-        Submit
+      <button
+        mat-raised-button
+        color="accent"
+        type="submit"
+        class="submit-btn"
+        [disabled]="!loginForm.valid"
+      >
+        Login
       </button>
     </form>
   </div>

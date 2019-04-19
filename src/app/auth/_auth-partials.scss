@@ -5,6 +5,11 @@
   padding-top: 60px;
 }
 
+.form-title {
+  color: $purple;
+  font-weight: bold;
+}
+
 mat-form-field,
 .google-signup,
 .submit-btn {
@@ -13,6 +18,7 @@ mat-form-field,
 
 .google-signup {
   font-size: 16px;
+  color: $darkgrey;
 }
 
 .submit-btn {

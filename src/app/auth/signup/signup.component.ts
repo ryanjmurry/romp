@@ -23,7 +23,7 @@ export class SignupComponent implements OnInit {
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(8)]],
       dateOfBirth: ['', Validators.required],
-      agreeToTerms: ['']
+      agreeToTerms: ['', Validators.requiredTrue]
     });
   }
 

@@ -1,15 +1,25 @@
 @import '../theme.scss';
 
-.container {
-  display: flex;
-  flex-flow: column;
+// .container {
+//   display: flex;
+//   flex-flow: column;
+//   height: 100%;
+// }
+
+// .container .header {
+//   flex: 0 1 auto;
+// }
+
+// .container .body {
+//   flex: 1 1 auto;
+// }
+
+mat-sidenav-container,
+mat-sidenav-content,
+mat-sidenav {
   height: 100%;
 }
 
-.container .header {
-  flex: 0 1 auto;
-}
-
-.container .body {
-  flex: 1 1 auto;
+mat-sidenav {
+  width: 250px;
 }

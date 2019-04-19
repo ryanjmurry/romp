@@ -7,12 +7,33 @@
   h1 {
     // font-size: 22px;
     color: $purple;
-
-    a {
-      text-decoration: none;
-    }
   }
-  mat-icon {
+
+  .brand-icon {
     color: $orange;
   }
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: $purple;
+}
+
+.navigation-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-item {
+  color: $darkgrey;
+  font-size: 14px;
+}
+
+.active-link {
+  color: $purple;
 }
